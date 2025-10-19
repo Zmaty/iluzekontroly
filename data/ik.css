@@ -6,7 +6,7 @@ a:link,a:visited,a:active {color:#fff; text-decoration:underline;}
 a:hover {color:#f00; transition:0s;}
 body {background:#000;}
 
-#menu {position:relative; overflow:hidden; font-size:1.2em; font-weight:bold; min-width:960px; max-width:960px; margin:0 auto;}
+#menu {position:relative; overflow:hidden; font-family:"Audiowide"; font-size:1.2em; min-width:960px; max-width:960px; margin:0 auto;}
 #menu ul {display:flex; flex-direction:row; float:right;}
 #menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:5px 0; padding:15px;}
 #menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {color:#f00; transition:0s;}
@@ -22,8 +22,10 @@ body {background:#000;}
   background:#ffffff22; text-align:left; line-height:1.5;}
 #obsah {min-width:960px; max-width:960px;}
 b {font-size:1.2em; text-transform:uppercase;}
+.ik-uvod {width:100%; border-radius:10px;}
+.ksicht-kapela {width:19.4%; border-radius:10px; margin:0 5px 5px 0;}
 .kontakt {clear:both;}
-.ksicht {float:left; height:200px; border-radius:10px; margin:0 20px 0 0;}
+.ksicht-kontakt {float:left; height:200px; border-radius:10px; margin:0 20px 0 0;}
 .poznamka {font-style:italic; color:#777;}
 
 /* optimalizace pro mobily */
@@ -52,3 +54,4 @@ b {font-size:1.2em; text-transform:uppercase;}
 
 #main {position:relative; margin-top:64px; padding:20px;}
 #obsah {min-width:100%; max-width:100%;}
+.ksicht-kapela {width:18.61%;}
