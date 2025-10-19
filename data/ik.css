@@ -4,17 +4,17 @@ html {font-family:"Montserrat", sans-serif; color:#fff; font-size:1em;}
 html,body,div,img,ul,li,a {z-index:0; margin:0; padding:0; box-sizing:border-box; border-width:0px; vertical-align:top; list-style:none; transition:0.5s;}
 a:link,a:visited,a:active {color:#fff; text-decoration:underline;}
 a:hover {color:#f00; transition:0s;}
-body {background:#000 url(bg.png) repeat local top center;}
+body {background:#000;}
 
 #menu {position:relative; overflow:hidden; font-size:1.2em; font-weight:bold; min-width:960px; max-width:960px; margin:0 auto;}
 #menu ul {display:flex; flex-direction:row; float:right;}
-#menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:0 0 0 30px; padding:15px 0;}
+#menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:5px 0; padding:15px;}
 #menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {color:#f00; transition:0s;}
-.logotext {position:relative; float:left; display:flex; padding:3px 0; font-family:"Audiowide"; font-size:2em;}
+.logotext {position:relative; float:left; display:flex; margin:8px 0 0 0; font-family:"Audiowide"; font-size:2em;}
 .logotext a {text-decoration:none;}
 .logotext span {color:#f00;}
-.social-media {position:relative; float:left; display:flex; margin:0 20px;}
-.social-media img {height:40px; margin:7px 0 0 5px; border:2px solid #00000000; border-radius:5px;}
+.social-media {position:relative; float:left; display:flex; margin:13px 20px 0 20px;}
+.social-media img {height:40px; margin:0 0 0 5px; border:2px solid #00000000; border-radius:0px;}
 .social-media img:hover {border:2px solid #f00; border-radius:20px; transition:0s;}
 .minimenu {display:none;}
 
@@ -22,6 +22,9 @@ body {background:#000 url(bg.png) repeat local top center;}
   background:#ffffff22; text-align:left; line-height:1.5;}
 #obsah {min-width:960px; max-width:960px;}
 b {font-size:1.2em; text-transform:uppercase;}
+.kontakt {clear:both;}
+.ksicht {float:left; height:200px; border-radius:10px; margin:0 20px 0 0;}
+.poznamka {font-style:italic; color:#777;}
 
 /* optimalizace pro mobily */
 @media (max-width:960px) {
@@ -31,8 +34,8 @@ b {font-size:1.2em; text-transform:uppercase;}
 #menu ul li {background:#222; visibility:hidden; opacity:0; transform:translateX(-250px); transition-delay:calc(0.1s * var(--i));}
 #menu.active ul li {visibility:visible; opacity:1; transform:translateX(0px);}
 #menu ul li a {justify-content:left; margin:0;}
-#menu ul li a, .minimenu {padding:15px 20px;}
-#menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {background:#222; transition:0s;}
+#menu ul li a, .minimenu {padding:20px;}
+#menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {background:#222; transition:0s; border:0px; border-radius:0;}
 .minimenu {display:flex; justify-content:right; cursor:pointer;}
 .minimenu:hover {color:#f00;}
 .minimenu.active {background:#222;}
@@ -43,9 +46,9 @@ b {font-size:1.2em; text-transform:uppercase;}
 .minimenu span::after {content:''; position:absolute; top:14px; right:0px; width:20px; height:2px; background:#fff; transition:0.5s;}
 .minimenu.active span::before {transform:rotate(225deg); top:11px;}
 .minimenu.active span::after {transform:rotate(135deg); top:11px;}
-.logotext {margin:0 20px;}
+.logotext {margin:8px 20px 0 20px;}
 .logotext a:hover {background:none!important;}
 .social-media {position:fixed; bottom:10px;}
 
-#main {position:relative; margin-top:54px; padding:20px;}
+#main {position:relative; margin-top:64px; padding:20px;}
 #obsah {min-width:100%; max-width:100%;}
