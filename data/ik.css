@@ -23,20 +23,20 @@ body {background:#000;}
 #obsah {min-width:960px; max-width:960px;}
 b {font-size:1.2em; text-transform:uppercase;}
 .ik-uvod {width:100%; border-radius:10px;}
-.ksicht-kapela {width:19.4%; border-radius:10px; margin:0 5px 5px 0;}
+.ksicht-kapela {display:block; text-align:center; margin:0 0 10px 0;}
+.ksicht-kapela img {width:150px; border-radius:10px; margin:0 5px 10px 5px;}
 .kontakt {clear:both; word-break:break-all;}
-.ksicht-kontakt {float:left; height:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
+.ksicht-kontakt {float:left; width:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
 .poznamka {font-style:italic; color:#777;}
 
 /* optimalizace pro mobily */
 @media (max-width:960px) {
-html {font-size:1.0em;}
 #menu {position:absolute; top:0; min-width:100%; max-width:100%;}
 #menu.active {z-index:100;}
 #menu ul {position:fixed; flex-direction:column; width:100%;}
 #menu ul li {background:#222; visibility:hidden; opacity:0; transform:translateX(-250px); transition-delay:calc(0.1s * var(--i));}
 #menu.active ul li {visibility:visible; opacity:1; transform:translateX(0px);}
-#menu ul li a {justify-content:left; margin:0;}
+#menu ul li a {justify-content:left;}
 #menu ul li a, .minimenu {padding:20px;}
 #menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {background:#222; transition:0s; border:0px; border-radius:0;}
 .minimenu {display:flex; justify-content:right; cursor:pointer;}
@@ -45,15 +45,15 @@ html {font-size:1.0em;}
 .minimenu::before {content:'menu'; margin:0 30px; text-transform:uppercase;}
 .minimenu.active::before {content:'exit';}
 .minimenu span {position:relative;}
-.minimenu span::before {content:''; position:absolute; top:7px; right:0px; width:20px; height:2px; background:#fff; transition:0.5s;}
-.minimenu span::after {content:''; position:absolute; top:14px; right:0px; width:20px; height:2px; background:#fff; transition:0.5s;}
-.minimenu.active span::before {transform:rotate(225deg); top:11px;}
-.minimenu.active span::after {transform:rotate(135deg); top:11px;}
+.minimenu span::before {content:''; position:absolute; top:9px; right:0px; width:20px; height:2px; background:#fff; transition:0.5s;}
+.minimenu span::after {content:''; position:absolute; top:16px; right:0px; width:20px; height:2px; background:#fff; transition:0.5s;}
+.minimenu.active span::before {transform:rotate(225deg); top:13px;}
+.minimenu.active span::after {transform:rotate(135deg); top:13px;}
 .logotext {margin:8px 20px 0 20px;}
 .logotext a:hover {background:none!important;}
 .social-media {position:fixed; bottom:10px;}
 
-#main {position:relative; margin-top:64px; padding:20px;}
+#main {position:relative; margin-top:67px; padding:20px;}
 #obsah {min-width:100%; max-width:100%;}
-.ksicht-kapela {width:18.61%;}
-.ksicht-kontakt {height:150px; margin:0 10px 0 0;}
+.ksicht-kapela img {width:110px;}
+.ksicht-kontakt {width:120px; margin:0 10px 0 0;}
