@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Ephesis&display=swap');
-html {font-family:"Montserrat", sans-serif; color:#fff; font-size:1em;}
+html {font-family:"Montserrat", sans-serif; color:#fff; font-size:1.3em;}
 html,body,div,img,ul,li,a {z-index:0; margin:0; padding:0; box-sizing:border-box; border-width:0px; vertical-align:top; list-style:none; transition:0.5s;}
 a:link,a:visited,a:active {color:#fff; text-decoration:underline;}
 a:hover {color:#f00; transition:0s;}
 body {background:#000;}
 
-#menu {position:relative; overflow:hidden; font-family:"Audiowide"; font-size:1.2em; min-width:960px; max-width:960px; margin:0 auto;}
+#menu {position:relative; overflow:hidden; font-family:"Audiowide"; min-width:960px; max-width:960px; margin:0 auto;}
 #menu ul {display:flex; flex-direction:row; float:right;}
 #menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:5px 0; padding:15px;}
 #menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {color:#f00; transition:0s;}
 .logotext {position:relative; float:left; display:flex; margin:8px 0 0 0; font-family:"Audiowide"; font-size:2em;}
 .logotext a {text-decoration:none;}
 .logotext span {color:#f00;}
-.social-media {position:relative; float:left; display:flex; margin:13px 20px 0 20px;}
+.social-media {position:relative; float:left; display:flex; margin:15px 20px 0 20px;}
 .social-media img {height:40px; margin:0 0 0 5px; border:2px solid #00000000; border-radius:0px;}
 .social-media img:hover {border:2px solid #f00; border-radius:20px; transition:0s;}
 .minimenu {display:none;}
@@ -24,12 +24,13 @@ body {background:#000;}
 b {font-size:1.2em; text-transform:uppercase;}
 .ik-uvod {width:100%; border-radius:10px;}
 .ksicht-kapela {width:19.4%; border-radius:10px; margin:0 5px 5px 0;}
-.kontakt {clear:both;}
-.ksicht-kontakt {float:left; height:200px; border-radius:10px; margin:0 20px 0 0;}
+.kontakt {clear:both; word-break:break-all;}
+.ksicht-kontakt {float:left; height:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
 .poznamka {font-style:italic; color:#777;}
 
 /* optimalizace pro mobily */
 @media (max-width:960px) {
+html {font-size:1.0em;}
 #menu {position:absolute; top:0; min-width:100%; max-width:100%;}
 #menu.active {z-index:100;}
 #menu ul {position:fixed; flex-direction:column; width:100%;}
@@ -55,3 +56,4 @@ b {font-size:1.2em; text-transform:uppercase;}
 #main {position:relative; margin-top:64px; padding:20px;}
 #obsah {min-width:100%; max-width:100%;}
 .ksicht-kapela {width:18.61%;}
+.ksicht-kontakt {height:150px; margin:0 10px 0 0;}
