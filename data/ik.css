@@ -29,6 +29,12 @@ b {font-size:1.2em; text-transform:uppercase;}
 .ksicht-kontakt {float:left; width:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
 .poznamka {font-style:italic; color:#777;}
 
+/* úprava vlastností FB feedu Iglú ze sociablekit.com */
+.sk-fb-event {background:#ffffff00 !important; margin:0 !important; padding:0 !important;}
+.sk-fb-event div {border-radius:10px !important; margin:0px !important;}
+.sk-events-header {display:none !important;}
+.sk-event-item, .--sk-event-image-loaded, .vertical {max-height:960px !important; background:#ffffff80 !important;}
+
 /* optimalizace pro mobily */
 @media (max-width:960px) {
 #menu {position:absolute; top:0; min-width:100%; max-width:100%;}
