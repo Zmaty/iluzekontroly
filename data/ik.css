@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Ephesis&display=swap');
-html {font-family:"Montserrat", sans-serif; color:#fff; font-size:1.3em;}
+html {font-family:"Montserrat", sans-serif; color:#fff; font-size:1em;}
 html,body,div,img,ul,li,a {z-index:0; margin:0; padding:0; box-sizing:border-box; border-width:0px; vertical-align:top; list-style:none; transition:0.5s;}
 a:link,a:visited,a:active {color:#fff; text-decoration:underline;}
 a:hover {color:#f00; transition:0s;}
 body {background:#000;}
 
-#menu {position:relative; overflow:hidden; font-family:"Audiowide"; min-width:960px; max-width:960px; margin:0 auto;}
+#menu {position:relative; overflow:hidden; font-family:"Audiowide"; font-size:1.3em; min-width:960px; max-width:960px; margin:0 auto;}
 #menu ul {display:flex; flex-direction:row; float:right;}
 #menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:5px 0; padding:15px;}
 #menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {color:#f00; transition:0s;}
@@ -19,9 +19,8 @@ body {background:#000;}
 .minimenu {display:none;}
 
 #main {position:relative; display:flex; justify-content:center; margin:0 auto 20px auto; padding:30px;
-  background:#ffffff22; text-align:left; line-height:1.5;}
+  background:#ffffff22; text-align:left; line-height:1.5; font-size:1.1em;}
 #obsah {min-width:960px; max-width:960px;}
-b {font-size:1.2em; text-transform:uppercase;}
 .ik-uvod {width:100%; border-radius:10px;}
 .ksicht-kapela {display:block; text-align:center; margin:0 0 10px 0;}
 .ksicht-kapela img {width:150px; border-radius:10px; margin:0 5px 10px 5px;}
@@ -61,5 +60,5 @@ b {font-size:1.2em; text-transform:uppercase;}
 
 #main {position:relative; margin-top:67px; padding:20px;}
 #obsah {min-width:100%; max-width:100%;}
-.ksicht-kapela img {width:110px;}
+.ksicht-kapela img {width:100px;}
 .ksicht-kontakt {width:120px; margin:0 10px 0 0;}
