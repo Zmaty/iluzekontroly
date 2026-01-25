@@ -23,16 +23,16 @@ body {background:#000;}
 #obsah {min-width:960px; max-width:960px;}
 .ik-uvod {width:100%; border-radius:10px;}
 .ksichty-kapela {display:flex; flex-flow:row wrap; justify-content:center; margin:0 0 10px 0;}
-#fero {background:#111 url(fotky/fero_a.jpg);}
-#fero:hover {background:#999 url(fotky/fero_b.jpg);}
-#mates {background:#111 url(fotky/mates_a.jpg);}
-#mates:hover {background:#999 url(fotky/mates_b.jpg);}
-#verca {background:#111 url(fotky/verca_a.jpg);}
-#verca:hover {background:#999 url(fotky/verca_b.jpg);}
-#vlada {background:#111 url(fotky/vlada_a.jpg);}
-#vlada:hover {background:#999 url(fotky/vlada_b.jpg);}
-#maty {background:#111 url(fotky/maty_a.jpg);}
-#maty:hover {background:#999 url(fotky/maty_b.jpg);}
+#fero {background:#111 url(fotky/fero_a2.jpg);}
+#fero:hover {background:#999 url(fotky/fero_b2.jpg);}
+#mates {background:#111 url(fotky/mates_a2.jpg);}
+#mates:hover {background:#999 url(fotky/mates_b2.jpg);}
+#verca {background:#111 url(fotky/verca_a2.jpg);}
+#verca:hover {background:#999 url(fotky/verca_b2.jpg);}
+#vlada {background:#111 url(fotky/vlada_a2.jpg);}
+#vlada:hover {background:#999 url(fotky/vlada_b2.jpg);}
+#maty {background:#111 url(fotky/maty_a2.jpg);}
+#maty:hover {background:#999 url(fotky/maty_b2.jpg);}
 #fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s; cursor:pointer;}
 #fero:hover, #mates:hover, #verca:hover, #vlada:hover, #maty:hover {transition:0s;}
 .kontakt {clear:both; word-break:break-all;}
