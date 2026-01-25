@@ -22,8 +22,19 @@ body {background:#000;}
   background:#ffffff22; text-align:left; line-height:1.5; font-size:1.1em;}
 #obsah {min-width:960px; max-width:960px;}
 .ik-uvod {width:100%; border-radius:10px;}
-.ksicht-kapela {display:block; text-align:center; margin:0 0 10px 0;}
-.ksicht-kapela img {width:150px; border-radius:10px; margin:0 5px 10px 5px;}
+.ksichty-kapela {display:flex; justify-content:center; margin:0 0 10px 0;}
+
+#fero {background:#111 url(fotky/fero_a.jpg);}
+#fero:hover {background:#999 url(fotky/fero_b.jpg);}
+#mates {background:#111 url(fotky/mates_a.jpg);}
+#mates:hover {background:#999 url(fotky/mates_b.jpg);}
+#verca {background:#111 url(fotky/verca_a.jpg);}
+#verca:hover {background:#999 url(fotky/verca_b.jpg);}
+#vlada {background:#111 url(fotky/vlada_a.jpg);}
+#vlada:hover {background:#999 url(fotky/vlada_b.jpg);}
+#maty {background:#111 url(fotky/maty_a.jpg);}
+#maty:hover {background:#999 url(fotky/maty_b.jpg);}
+#fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s;}
 .kontakt {clear:both; word-break:break-all;}
 .ksicht-kontakt {float:left; width:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
 .poznamka {font-style:italic; color:#777;}
