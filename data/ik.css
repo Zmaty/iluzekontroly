@@ -33,7 +33,7 @@ body {background:#000;}
 #vlada:hover {background:#999 url(fotky/vlada_b.jpg);}
 #maty {background:#111 url(fotky/maty_a.jpg);}
 #maty:hover {background:#999 url(fotky/maty_b.jpg);}
-#fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s;}
+#fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s; cursor:pointer;}
 #fero:hover, #mates:hover, #verca:hover, #vlada:hover, #maty:hover {transition:0s;}
 .kontakt {clear:both; word-break:break-all;}
 .ksicht-kontakt {float:left; width:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
