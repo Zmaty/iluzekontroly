@@ -1,39 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Ephesis&display=swap');
 html {font-family:"Montserrat", sans-serif; color:#fff; font-size:1em;}
-html,body,div,img,ul,li,a {z-index:0; margin:0; padding:0; box-sizing:border-box; border-width:0px; vertical-align:top; list-style:none; transition:0.5s;}
+html,body,div,img,ul,li,a {z-index:0; margin:0; padding:0; box-sizing:border-box; border-width:0px; vertical-align:top; list-style:none; transition:0.5s; scroll-behavior:smooth;}
 a:link,a:visited,a:active {color:#fff; text-decoration:underline;}
 a:hover {color:#f00; transition:0s;}
-body {background:#000;}
+body {background:#222;}
 
-#menu {position:relative; overflow:hidden; font-family:"Audiowide"; font-size:1.3em; min-width:960px; max-width:960px; margin:0 auto;}
+#menu {position:fixed; top:0; width:100%; display:flex; justify-content:center; z-index:101; overflow:hidden; font-family:"Audiowide"; font-size:1.3em; background:#111111dd;}
 #menu ul {display:flex; flex-direction:row; float:right;}
-#menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:5px 0; padding:15px;}
-#menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {color:#f00; transition:0s;}
-.logotext {position:relative; float:left; display:flex; margin:8px 0 0 0; font-family:"Audiowide"; font-size:2em;}
+#menu ul li a {display:flex; text-decoration:none; text-transform:uppercase; margin:0px; padding:20px;}
+#menu ul li a:hover, .minimenu:hover, .minimenu.active:hover, .logotext:hover {color:#f00; transition:0s; background:#ffffff0c;}
+.logotext {display:flex; float:left; padding:7px 20px; font-family:"Audiowide"; font-size:2em;}
 .logotext a {text-decoration:none;}
 .logotext span {color:#f00;}
-.social-media {position:relative; float:left; display:flex; margin:15px 20px 0 20px;}
+.social-media {display:flex; float:left; margin:15px 20px 0 20px;}
 .social-media img {height:40px; margin:0 0 0 5px; border:2px solid #00000000; border-radius:0px;}
 .social-media img:hover {border:2px solid #f00; border-radius:20px; transition:0s;}
 .minimenu {display:none;}
 
-#main {position:relative; display:flex; justify-content:center; margin:0 auto 20px auto; padding:30px;
-  background:#ffffff22; text-align:left; line-height:1.5; font-size:1.1em;}
-#obsah {min-width:960px; max-width:960px;}
-.ik-uvod {width:100%; border-radius:10px;}
-.ksichty-kapela {display:flex; flex-flow:row wrap; justify-content:center; margin:0 0 10px 0;}
+#main {position:relative; width:100%; display:flex; flex-flow:row wrap; justify-content:center; text-align:left; line-height:1.5; font-size:1.2em;}
+#obsah {margin:0px auto; width:960px; min-width:960px; max-width:960px; padding:0 20px;}
+section {position:relative; width:100%; min-height:100vh; padding:90px 0 0 0;}
+section#uvod {background:#222;}
+section#kapela {background:#424;}
+section#koncerty {background:#224;}
+section#kontakt {background:#242;}
+.ik-uvod {width:600px; border-radius:10px; margin:0 20px 100px 0; float:left;}
+.ik-clenove {display:flex; flex-flow:row wrap; justify-content:center;}
 #fero {background:#111 url(fotky/fero_a2.jpg);}
-#fero:hover {background:#999 url(fotky/fero_b2.jpg);}
+#fero:hover {background:#222 url(fotky/fero_b2.jpg);}
 #mates {background:#111 url(fotky/mates_a2.jpg);}
-#mates:hover {background:#999 url(fotky/mates_b2.jpg);}
+#mates:hover {background:#222 url(fotky/mates_b2.jpg);}
 #verca {background:#111 url(fotky/verca_a2.jpg);}
-#verca:hover {background:#999 url(fotky/verca_b2.jpg);}
+#verca:hover {background:#222 url(fotky/verca_b2.jpg);}
 #vlada {background:#111 url(fotky/vlada_a2.jpg);}
-#vlada:hover {background:#999 url(fotky/vlada_b2.jpg);}
+#vlada:hover {background:#222 url(fotky/vlada_b2.jpg);}
 #maty {background:#111 url(fotky/maty_a2.jpg);}
-#maty:hover {background:#999 url(fotky/maty_b2.jpg);}
-#fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s; cursor:pointer;}
+#maty:hover {background:#222 url(fotky/maty_b2.jpg);}
+#fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:170px; height:227px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s;}
 #fero:hover, #mates:hover, #verca:hover, #vlada:hover, #maty:hover {transition:0s;}
 .kontakt {clear:both; word-break:break-all;}
 .ksicht-kontakt {float:left; width:200px; border-radius:10px; margin:0 20px 0 0; overflow:hidden;}
@@ -47,17 +51,15 @@ body {background:#000;}
 
 /* optimalizace pro mobily */
 @media (max-width:960px) {
-#menu {position:absolute; top:0; min-width:100%; max-width:100%;}
-#menu.active {z-index:100;}
-#menu ul {position:fixed; flex-direction:column; width:100%;}
-#menu ul li {background:#222; visibility:hidden; opacity:0; transform:translateX(-250px); transition-delay:calc(0.1s * var(--i));}
+#menu {min-width:100%; max-width:100%; justify-content:left; height:67px;}
+#menu.active {z-index:101; overflow:visible;}
+#menu ul {flex-direction:column; width:100%;}
+#menu ul li {background:#111111dd; visibility:hidden; opacity:0; transform:translateX(-250px); transition-delay:calc(0.1s * var(--i));}
 #menu.active ul li {visibility:visible; opacity:1; transform:translateX(0px);}
 #menu ul li a {justify-content:left;}
-#menu ul li a, .minimenu {padding:20px;}
-#menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {background:#222; transition:0s; border:0px; border-radius:0;}
-.minimenu {display:flex; justify-content:right; cursor:pointer;}
+#menu ul li a:hover, .minimenu:hover, .minimenu.active:hover {background:#ffffff0c; transition:0s; border:0px; border-radius:0;}
+.minimenu {display:flex; padding:20px; margin:0px; justify-content:right; cursor:pointer;}
 .minimenu:hover {color:#f00;}
-.minimenu.active {background:#222;}
 .minimenu::before {content:'menu'; margin:0 30px; text-transform:uppercase;}
 .minimenu.active::before {content:'exit';}
 .minimenu span {position:relative;}
@@ -65,11 +67,9 @@ body {background:#000;}
 .minimenu span::after {content:''; position:absolute; top:16px; right:0px; width:20px; height:2px; background:#fff; transition:0.5s;}
 .minimenu.active span::before {transform:rotate(225deg); top:13px;}
 .minimenu.active span::after {transform:rotate(135deg); top:13px;}
-.logotext {margin:8px 20px 0 20px;}
-.logotext a:hover {background:none!important;}
 .social-media {position:fixed; bottom:10px;}
-
-#main {position:relative; margin-top:67px; padding:20px;}
-#obsah {min-width:100%; max-width:100%;}
-.ksicht-kapela img {width:100px;}
+#obsah {width:100%; min-width:100%; max-width:100%; padding:0 10px;}
+section {padding:80px 0 0 0;}
+.ik-uvod {width:100%; margin:0 0 20px 0;}
+#fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px;}
 .ksicht-kontakt {width:120px; margin:0 10px 0 0;}
