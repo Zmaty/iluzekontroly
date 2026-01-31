@@ -19,24 +19,24 @@ body {background:#222;}
 .minimenu {display:none;}
 
 #main {position:relative; width:100%; display:flex; flex-flow:row wrap; justify-content:center; text-align:left; line-height:1.5; font-size:1.2em;}
-#obsah {margin:0px auto; width:960px; min-width:960px; max-width:960px; padding:0 20px;}
-section {position:relative; width:100%; min-height:100vh; padding:90px 0 0 0;}
+#obsah {margin:90px auto 0 auto; width:960px; min-width:960px; max-width:960px; padding:0 20px;}
+section {position:relative; width:100%; min-height:100vh;}
 section#uvod {background:#222;}
 section#kapela {background:#424;}
 section#koncerty {background:#224;}
-section#kontakt {background:#242;}
+section#kontakt {background:#422;}
 .ik-uvod {width:600px; border-radius:10px; margin:0 20px 100px 0; float:left;}
 .ik-clenove {display:flex; flex-flow:row wrap; justify-content:center;}
 #fero {background:#111 url(fotky/fero_a2.jpg);}
-#fero:hover {background:#222 url(fotky/fero_b2.jpg);}
+#fero:hover, #fero:link, #fero:visited, #fero:active {background:#222 url(fotky/fero_b2.jpg);}
 #mates {background:#111 url(fotky/mates_a2.jpg);}
-#mates:hover {background:#222 url(fotky/mates_b2.jpg);}
+#mates:hover, #mates:link, #mates:visited, #mates:active {background:#222 url(fotky/mates_b2.jpg);}
 #verca {background:#111 url(fotky/verca_a2.jpg);}
-#verca:hover {background:#222 url(fotky/verca_b2.jpg);}
+#verca:hover, #verca:link, #verca:visited, #verca:active {background:#222 url(fotky/verca_b2.jpg);}
 #vlada {background:#111 url(fotky/vlada_a2.jpg);}
-#vlada:hover {background:#222 url(fotky/vlada_b2.jpg);}
+#vlada:hover, #vlada:link, #vlada:visited, #vlada:active {background:#222 url(fotky/vlada_b2.jpg);}
 #maty {background:#111 url(fotky/maty_a2.jpg);}
-#maty:hover {background:#222 url(fotky/maty_b2.jpg);}
+#maty:hover, #maty:link, #maty:visited, #maty:active {background:#222 url(fotky/maty_b2.jpg);}
 #fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:170px; height:227px; border-radius:10px; margin:0 5px 10px 5px; background-size:contain; transition:1s;}
 #fero:hover, #mates:hover, #verca:hover, #vlada:hover, #maty:hover {transition:0s;}
 .kontakt {clear:both; word-break:break-all;}
@@ -69,7 +69,6 @@ section#kontakt {background:#242;}
 .minimenu.active span::after {transform:rotate(135deg); top:13px;}
 .social-media {position:fixed; bottom:10px;}
 #obsah {width:100%; min-width:100%; max-width:100%; padding:0 10px;}
-section {padding:80px 0 0 0;}
 .ik-uvod {width:100%; margin:0 0 20px 0;}
 #fero, #fero:hover, #mates, #mates:hover, #verca, #verca:hover, #vlada, #vlada:hover, #maty, #maty:hover {width:150px; height:200px;}
 .ksicht-kontakt {width:120px; margin:0 10px 0 0;}
